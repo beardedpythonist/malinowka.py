@@ -1,4 +1,3 @@
-
 # #1  просто перечсисляем
 #
 # slov1 = {'wasja': 27, 'zosja': 35}
@@ -36,7 +35,6 @@
 #
 # #8
 #
-
 
 
 #
@@ -180,16 +178,114 @@
 #         carlist[object.model] = object.info_obj()
 #     print(carlist)
 
+#
+# tup1 = (1, 2, 5, 7)
+# x = sum(tup1)
+#
+# print(x)
+#
+# a = [1, 2, 3]
+# b = a
+# c = [1, 2, 3]
+#
+# print(a == b)
+# print(id(a))
+# print(id(b))
+#
+# print(a is c)
+# print(id(c))
 
 
-import requests
 
-response = requests.options('http://google.com')
-zapros = requests.request(url='http://onliner.by', method="GET")
+# class Car:
+#
+#     def __init__(self, color, speed):
+#
+#         Car.count += 1
+#         self.color = color
+#         self.speed = speed
+#
+#     def info(self):
+#         return  self.speed, self.color
+#
+#     @staticmethod
+#     def create():
+#         for c in range(5):
+#             obj = Car('red', 150)
+#             print(obj.info())
+#
+# Car.create()
+# print(Car.count)
 
 
-print(response.headers)
+#
+# def func():
+#     print('Im a function')
+#
+#
+# print(func)
+# list1  = [10, 20 , 30, 50, 80]
+#
+#
+# f = lambda x: x > 30
+#
+#
+#
+# list1 = list(filter(f, list1))
+#
+#
+# print(list1)
 
 
-for key, val in response.headers.items():
-     print(f' ключ:  {key}, значение: {val}')
+# list1  = [10, 20 , 30, 50, 80]
+# list1.reverse()
+# print(list1)
+#
+#
+#
+# list_new = list1  * 3
+# print(list_new)
+#
+#
+# list1 = [10, 20, 30, 50, 80]
+# list4 = list1.copy()
+# print(list4)
+#
+# list1.append(77)
+# print(list1)
+#
+# list1 = [10, 20, 30, 50, 80, 50, 20]
+#
+# list2 = list1[:2]
+# print(list2)
+# list3  = list1[2:]
+# print(list3)
+#
+#
+# set1  = set(list1)
+# print(list(set1))
+
+slov1  = {'wasja': 25, 'petja': 30, 'zosja': 40, 'masha': 20}
+
+
+for key, val in sorted(slov1.items(), key=lambda x: x[1]):
+    print(key, val)
+
+
+biglist = [(1,3,5),(5,7,1),(1,6,9),(10,2,7)]
+listnew = sorted(biglist, key= lambda x : x[1])
+
+print(listnew)
+
+str1  = 'dsjklsdf sdfsdkl f sdklfsdlfkdlkflsk ldfs'
+
+lis1 = str1.split('f')
+print(lis1)
+
+
+
+list1 = [10, 20, 30, 50, 80, 50, 20]
+
+for c in range(len(list1)):
+    print(c, list1[c])
+
