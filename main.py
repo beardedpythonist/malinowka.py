@@ -264,28 +264,102 @@
 #
 # set1  = set(list1)
 # print(list(set1))
+#
+# slov1  = {'wasja': 25, 'petja': 30, 'zosja': 40, 'masha': 20}
+#
+#
+# for key, val in sorted(slov1.items(), key=lambda x: x[1]):
+#     print(key, val)
+#
+#
+# biglist = [(1,3,5),(5,7,1),(1,6,9),(10,2,7)]
+# listnew = sorted(biglist, key= lambda x : x[1])
+#
+# print(listnew)
+#
+# str1  = 'dsjklsdf sdfsdkl f sdklfsdlfkdlkflsk ldfs'
+#
+# lis1 = str1.split('f')
+# print(lis1)
+#
+#
+#
+# list1 = [10, 20, 30, 50, 80, 50, 20]
+#
+# for c in range(len(list1)):
+#     print(c, list1[c])
+#
 
-slov1  = {'wasja': 25, 'petja': 30, 'zosja': 40, 'masha': 20}
+# простое число , команда break
+#
+# x  = int(input())
+#
+# flag =  True
+#
+#
+# for c in range(2, x):
+#     if x % c == 0:
+#         flag = False
+#         break
+#
+# print(flag)
+
+#ример континю
+# for i in range(10):
+#     if i == 7:
+#         continue
+#     print(i)
 
 
-for key, val in sorted(slov1.items(), key=lambda x: x[1]):
-    print(key, val)
+#
+#
+# a = [1,2,3,4,5]
+#
+# a2 = []
+# for i in a:
+#      a2.append(i + 1)
+# print(a2)
+#
+#
+# a2 = [i + 1 for i in a]
+# print(a2)
+#
+# Тернарный (условный) оператор — это однострочный оператор if/else.
+#
+# Синтаксис такой: a if condition else b.
+# a = 101
+#
+# print('Privet' if a < 100 else 'poka')
+
+#
+# str1 = 'fdsffsdf323423423fsdsfdfsd'
+# print(str1.isnumeric())
+
+# d = {'id':7, 'name':'Shiba', 'color':'brown', 'speed':'very slow'}
+# spis = list(d)
+#
+# for key in d.keys():
+#     print(key)
+#
+# str1 = 'fdsffsdf323423423fsdsfdfsd'.upper()
+# print(str1)
+
+#
+# del, remove , pop примеры
+
+# d = {'id':7, 'name':'Shiba', 'color':'brown', 'speed':'very slow'}
+# a = [1,2,3,4,5]
+#
+#
+# a.pop()
+#
+# x = d.pop('name')
+# print(d)
+# print(a)
 
 
-biglist = [(1,3,5),(5,7,1),(1,6,9),(10,2,7)]
-listnew = sorted(biglist, key= lambda x : x[1])
 
-print(listnew)
-
-str1  = 'dsjklsdf sdfsdkl f sdklfsdlfkdlkflsk ldfs'
-
-lis1 = str1.split('f')
-print(lis1)
+ls1  = [1,2,3,4,5]
 
 
-
-list1 = [10, 20, 30, 50, 80, 50, 20]
-
-for c in range(len(list1)):
-    print(c, list1[c])
-
+print(ls1)
