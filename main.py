@@ -412,12 +412,94 @@
 # print(str2)
 
 # пример генератор словаря (можно и с ключами и с о значениями манипулировать)
-slov2 = {x ** 2: x  for x in range(10)}
-print(slov2)
+# slov2 = {x ** 2: x  for x in range(10)}
+# print(slov2)
+#
+
+# пример try - except
+
+#
+# try:
+#     a  = 1 + '1'
+# except:
+#     print( 'числа и строки не складываются')
+#
+# finally:
+#
+#     print('poka')
+#
+#
+# from decimal import *
+# a = Decimal(0.3)
+# b = Decimal(0.1) + Decimal(0.1) + Decimal(0.1)
+# print(a == b)
+#
+# пример deepcopy
+import copy
+#
+# str1 = 'ffdd1133'
+# str2 =str1[::-1]
+# print(str2)
+#
+
+import copy
+#
+# пример копии
+# li1 = [['a'],['b'],['c']]
+# li2 = li1.copy()
+# print(li2)
+# li1[0][0] = 'x'
+# print(li2)
+
+# пример локальной и глобальной функции
+# def showname():
+#     global x
+#     x  = 30
+#     print(x)
+#
+# showname()
+#
+# q =  x * 2
+# print(q)
+
+# ls1  = [1,54,7,9,0]
+#
+# print(ls1[-4:-2])
+#
+# def fun0(*args):
+#    print(min(args))
+#
+# fun0(5,9,10)
+
+#
+# def fun1(**kwargs):
+#    print(kwargs)
+#
+# fun1(x=5, y=8, z=10)
 
 
+# def privet(showname):
+#    def wrapper():
+#       print('Wasje privet')
+#       showname()
+#       print('Poka')
+#    return wrapper
+#
+#
+# @privet
+# def showname():
+#    print('Ja Wasja')
+#
+# showname()
 
 
-
-
+# пример private метода  и инкомпусляции
+# class Car:
+#    def __init__(self, model, price):
+#       self.model = model
+#       self.__price = price
+#
+#
+# ob1 = Car('BMW', 15000)
+# print(ob1.price)
 

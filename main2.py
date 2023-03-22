@@ -1,7 +1,7 @@
 import requests
 
 response = requests.options('http://google.com')
-zapros = requests.request(url='http://onliner.by', method="GET")
+zapros = requests.get(url='http://onliner.by', method="GET")
 
 
 print(response.headers)
