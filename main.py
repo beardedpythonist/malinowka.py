@@ -134,21 +134,62 @@
 
 # декораторы
 # 1 ) определяем декоратор
+#
+# def simple_dec(func1):
+#     def wrapper():    # обернуть в wrapper
+#         print('Начало')
+#         func1()
+#         print('Конец')
+#     return  wrapper   # не забыть
+#
+#
+# @simple_dec
+# def func1():    # основаная фунция
+#     print('Privet')
+# func1()          # выздвать основную
+#
+#
+# #
+# import random
+#
+# color = ['white', 'black', 'red']
+# year = [2002, 2010, 2015]
+# model = ['BMW', "Audi", 'Opel', "MERC"]
+# class  Car:
+#     count = 0
+#     def __init__(self, color, year, model):
+#         Car.count += 1
+#         self.color = color
+#         self.year = year
+#         self.model = model
+#
+#
+#     def info_obj(self):
+#         return self.color, self.year, self.model
+#
+#
+#     @staticmethod
+# def createobjects():
+#     carlist = {}
+#     for c in range(10):
+#         color = random.choice(color)
+#         year = random.choice(year)
+#         model = random.choice(model)
+#         object = Car(color, year, model)
+#         print(object.info_obj())
+#         carlist[object.model] = object.info_obj()
+#     print(carlist)
 
-def simple_dec(func1):
-    def wrapper():    # обернуть в wrapper
-        print('Начало')
-        func1()
-        print('Конец')
-    return  wrapper   # не забыть
 
 
-@simple_dec
-def func1():    # основаная фунция
-    print('Privet')
-func1()          # выздвать основную
+import requests
+
+response = requests.options('http://google.com')
+zapros = requests.request(url='http://onliner.by', method="GET")
 
 
+print(response.headers)
 
 
-
+for key, val in response.headers.items():
+     print(f' ключ:  {key}, значение: {val}')
