@@ -502,4 +502,22 @@ import copy
 #
 # ob1 = Car('BMW', 15000)
 # print(ob1.price)
-
+#
+# ls1  = [1,4,7]
+# ls2 = [10, 20 , 50]
+# ls3 = zip(ls1, ls2)
+# print(list(ls3))
+#
+# slov0 = {}
+# slov1 =dict(zip(ls2, ls1))
+# print(slov1.values())
+#
+#
+# for key, val in slov1.items():
+#     print(key, val)
+#
+# str1 ='dsdffs333rd'
+# x =str1.count('3')
+# print(x)
+# str2 = str1.strip('d')
+# print(str2)
