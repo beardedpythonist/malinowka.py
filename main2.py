@@ -98,7 +98,7 @@
 #
 # print(convert('ABCees'))
 
- # пример на словари  на подсчет символов
+# пример на словари  на подсчет символов
 # text = 'footballcyberpunkextraterritorialityconversationalistblockophthalmoscopicinterdependencemamauserfff'
 #
 # result = {}
@@ -106,7 +106,6 @@
 #     result[s] = result.get(s, 0) + 1
 #
 # print(result)
-
 
 
 # Анаграммы — это слова, которые состоят из одинаковых букв. Например:
@@ -136,6 +135,17 @@
 #             list_final.append(c)
 # #     return list_final
 #
+
+
+# фактариал
+# x = 5
+# f =  1
+# for c in range(1, x + 1):
+#     f = f * c
+# print(f)
+
+
+#
 # ls1 = []
 # def likes(names):
 #     ls1 = names
@@ -149,17 +159,46 @@
 #         return f' {ls1[0]}, {ls1[1]} и {ls1[2]} оценили данную запись'
 #
 #     elif len(ls1) >= 4:
-#         return  f' {ls1[0]}, {ls1[1]} и {len(ls1[2:])} оценили данную запись'
+#         return  f' {ls1[0]}, {ls1[1]} и {len(ls1[2:])} других оценили данную запись'
 #
-# print(likes(['Тимур', 'Артур', 'Руслан', 'Анри', 'Дима']))
+# print(likes(['Эндрю', 'Тоби', 'Том', 'Артур']))
+
+# Реализуйте функцию index_of_nearest(), которая принимает два аргумента в следующем порядке:
 #
-# фактариал
-# x = 5
-# f =  1
-# for c in range(1, x + 1):
-#     f = f * c
-# print(f)
+# numbers — список целых чисел
+# number — целое число
+# Функция должна находить в списке numbers ближайшее по значению число к числу number и возвращать его индекс. Если список numbers пуст, функция должна вернуть число
+# −
+# 1
+# −1.
+# def index_of_nearest(numbers, number):
+#     if len(numbers) == 0:
+#         return -1
+#     else:
+#         slov = {}
+#         for c in range(len(numbers)):
+#             slov[c] = abs(number - numbers[c])
+#
+#         for key, val in slov.items():
+#             if val == min(slov.values()):
+#                 return key
+#
+# print(index_of_nearest([], 0))
 
 
+def spell(*args):
+    slov = {}
+    if len(args) == 0:
+        return slov
+    words_low = []
+    for c in args:
+        words_low.append(c.lower())
+    words_low = sorted(words_low, key=lambda x: len(x))
+    for c in range(len(words_low)):
+        slov[words_low[c][0]] = len(words_low[c])
+    return slov
 
+words = ['Математика', 'История', 'химия', 'биология', 'Информатика']
+
+print(spell(*words))
 
