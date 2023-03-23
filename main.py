@@ -246,14 +246,7 @@
 # list_new = list1  * 3
 # print(list_new)
 #
-#
-# list1 = [10, 20, 30, 50, 80]
-# list4 = list1.copy()
-# print(list4)
-#
-# list1.append(77)
-# print(list1)
-#
+
 # list1 = [10, 20, 30, 50, 80, 50, 20]
 #
 # list2 = list1[:2]
@@ -521,3 +514,17 @@ import copy
 # print(x)
 # str2 = str1.strip('d')
 # print(str2)
+
+#
+# def show_name(**kwargs):
+#     print(kwargs['x'])
+#
+#
+#
+# capitals = {'Россия': 'Москва', 'Англия': 'Лондон', 'Чехия': 'Прага', 'Бразилия':'Бразилиа'}
+#
+# show_name(x='Россия', y='Бразизия')
+#
+
+str1 = '32342ываываывыыва3423'
+print(str1.isascii())
