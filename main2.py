@@ -185,20 +185,20 @@
 #
 # print(index_of_nearest([], 0))
 
-
-def spell(*args):
-    slov = {}
-    if len(args) == 0:
-        return slov
-    words_low = []
-    for c in args:
-        words_low.append(c.lower())
-    words_low = sorted(words_low, key=lambda x: len(x))
-    for c in range(len(words_low)):
-        slov[words_low[c][0]] = len(words_low[c])
-    return slov
-
-words = ['Математика', 'История', 'химия', 'биология', 'Информатика']
-
-print(spell(*words))
-
+#
+# def spell(*args):
+#     slov = {}
+#     if len(args) == 0:
+#         return slov
+#     words_low = []
+#     for c in args:
+#         words_low.append(c.lower())
+#     words_low = sorted(words_low, key=lambda x: len(x))
+#     for c in range(len(words_low)):
+#         slov[words_low[c][0]] = len(words_low[c])
+#     return slov
+#
+# words = ['Математика', 'История', 'химия', 'биология', 'Информатика']
+#
+# print(spell(*words))
+#
